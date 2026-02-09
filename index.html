@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Canlis — Seattle (Queen Anne). Simple restaurant page for SDVE 106." />
+  <title>Canlis — Seattle (Queen Anne)</title>
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <h1>Canlis — Seattle (Queen Anne)</h1>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- NEW HTML ELEMENT not used earlier in class: figure/figcaption -->
+  <figure class="hero">
+    <img src="https://picsum.photos/seed/canlis/1200/400" alt="Night sky placeholder image">
+    <figcaption>Modern Northwest cuisine with iconic Seattle views.</figcaption>
+  </figure>
+
+  <div id="about" class="section">
+    <h2>About</h2>
+    <p>
+      Canlis is a fine‑dining restaurant in Seattle’s Queen Anne neighborhood. The focus is hospitality,
+      Pacific Northwest ingredients, and a calm dining room. Expect a thoughtful tasting menu and professional service.
+    </p>
+
+    <ul>
+      <li>Reservations recommended</li>
+      <li>Smart casual to formal dress is common</li>
+      <li>Valet and rideshare friendly</li>
+      <li>Great for celebrations and special nights</li>
+    </ul>
+  </div>
+
+  <div id="menu" class="section">
+    <h2>Menu</h2>
+    <p>The tasting menu changes with the seasons. This is a simple example.</p>
+
+    <!-- Required nested list -->
+    <ul class="menu-list">
+      <li>Tasting Menu
+        <ul>
+          <li>First Course — bright seasonal starter</li>
+          <li>Main Course — local fish or dry‑aged beef</li>
+          <li>Dessert — classic with a modern twist</li>
+        </ul>
+      </li>
+      <li>Wine Pairing
+        <ul>
+          <li>Classic Pairing</li>
+          <li>Reserve Pairing</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div id="reservations" class="section">
+    <h2>Reservations</h2>
+    <p>How to book:</p>
+    <ol>
+      <li>Select your date and party size.</li>
+      <li>Choose an available time.</li>
+      <li>Confirm your contact details.</li>
+    </ol>
+    <p>
+      Make a reservation here:
+      <a href="https://www.canlis.com/reservations/" target="_blank" rel="noopener">Canlis Reservations</a>.
+    </p>
+  </div>
+
+  <div id="location" class="section">
+    <h2>Location</h2>
+    <p>Seattle, Queen Anne area, overlooking Lake Union.</p>
+    <!-- Another semantic element you can note as “new”: address -->
+    <address>
+      Canlis — Seattle, WA<br>
+      <a href="https://maps.google.com/?q=Canlis+Seattle" target="_blank" rel="noopener">View on Google Maps</a>
+    </address>
+  </div>
+
+  <div id="reviews" class="section">
+    <h2>Reviews</h2>
+    <p>Short, student‑written sample quotes:</p>
+    <ul>
+      <li>“Service was on point and the view was unreal.”</li>
+      <li>“Each course felt balanced and thoughtful.”</li>
+    </ul>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Canlis (student project). <a href="#top">Back to top</a></p>
+  </footer>
+
+  <script>
+    // Optional: show current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
